@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pmub.Depots">
+    <ContentPage.Content>
+  
+        <StackLayout BackgroundColor="#0ed145" Padding="10">
+            <Frame Padding="10" CornerRadius="0">
+                <Label Text="P M U - B" HorizontalTextAlignment="Center" TextColor="red" FontSize="30"/>
+            </Frame>
+            <ScrollView>
+                <StackLayout>
+                    
+                    <Label Text="DEPOTS" FontSize="24" BackgroundColor="Yellow" HorizontalOptions="Center">
+
+                    </Label>
+                    <Label Text="La lotterie nationale du Burkina Faso" FontSize="16" BackgroundColor="White" Padding="0">
+
+                    </Label>
+                    <Label Text="Depôts en ligne " FontSize="16" FontAttributes="Bold" HorizontalTextAlignment="Center"></Label>
+                    <Label Text="ORANGE MONEY : " FontSize="14" FontAttributes="Bold" Padding="0" TextColor="White"></Label>
+                    <Label Text="Composez le : *144*2*1# et faites un transfert d'aegent vers le 57 79 70 40 au nom de MALO NANKALI LOUIS ARNAUD" FontSize="12" Padding="10,0,10,10"></Label>
+
+                    <Label Text="MOOV MONEY : " FontSize="14" FontAttributes="Bold" Padding="0" TextColor="White"></Label>
+                    <Label Text="Composez le : *555# et faites un transfert d'aegent vers le 57 79 70 40 au nom de MALO NANKALI LOUIS ARNAUD" FontSize="12" Padding="10,0,10,10"></Label>
+
+                    <Label Text="SANK : " FontSize="14" FontAttributes="Bold" Padding="0" TextColor="White"></Label>
+                    <Label Text="Composez le : *144# et faites un transfert d'aegent vers le 57 79 70 40 au nom de MALO NANKALI LOUIS ARNAUD" FontSize="12" Padding="10,0,10,10"></Label>
+
+                    <Label Text="CONFIRMER LE DEPOT " HorizontalOptions="Center" FontSize="18" FontAttributes="Bold"></Label>
+
+                    <Label Text="Mode de Depot " TextColor="White" FontSize="18" HorizontalTextAlignment="Center"></Label>
+                    <RadioButton  x:Name="Orange" Content="Orange" Value="Orange"></RadioButton>
+                    <RadioButton x:Name="Moov"  Content="Moov" Value="Moov"></RadioButton>
+                    <RadioButton  x:Name="Sank" Content="Sank" Value="Sank"></RadioButton>
+
+                        <Entry x:Name="TelephoneDepot" Placeholder="Téléphone:" Keyboard="Numeric"></Entry>
+                        <Entry x:Name="MontantDepot" Placeholder="Montant du dépôt:" Keyboard="Numeric"></Entry>
+
+                    <Button Text=" Valider " BackgroundColor="Yellow"></Button>
+                    <Label Text="100% gratuit" FontSize="10" TextColor="Black" VerticalOptions="end" HorizontalOptions="Center"></Label>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

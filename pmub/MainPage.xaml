@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pmub.MainPage">
+
+    <StackLayout BackgroundColor="#0ed145" Padding="10">
+        <Frame Padding="10" CornerRadius="0">
+            <Label Text="P M U - B" HorizontalTextAlignment="Center" TextColor="red" FontSize="30"/>
+        </Frame>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="La lotterie nationale du Burkina Faso" FontSize="16" BackgroundColor="White" Padding="10">
+
+                </Label>
+                <Label Text="Inscrivez vous et jouez" HorizontalTextAlignment="Center" Padding="10"></Label>
+
+                <Entry Placeholder="Utilisateur" FontSize="16"></Entry>
+                <Entry Placeholder="Mots de Passe" FontSize="16"></Entry>
+
+
+                <Button Text="Connexion"  FontSize="16" BackgroundColor="Yellow" Padding="0" Margin="60,0,60,0"  
+                CornerRadius="15" FontAttributes="Bold"></Button>
+                <Label Text="Si vous n'avez pas encore de compte" HorizontalTextAlignment="Center" Padding="0"></Label>
+                <Button Text="Inscriptions" FontSize="16" FontAttributes="Bold" BackgroundColor="Green" Padding="0" Margin="60,0,60,0"
+               Clicked="OpenInscriptionPage" ></Button>
+                
+
+                    <Grid Padding="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="Date :" FontSize="16" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Padding="0" ></Label>
+                        <Label Text="Arrivee :" FontSize="16" FontAttributes="Bold" Grid.Row="1" Grid.Column="0" Padding="0" ></Label>
+                        <Label Text="Ordre :" FontSize="16" FontAttributes="Bold" Grid.Row="2" Grid.Column="0" Padding="0" ></Label>
+                        <Label Text="Desordre:" FontSize="16" FontAttributes="Bold" Grid.Row="3" Grid.Column="0" Padding="0" ></Label>
+                        <Label Text="Bonus :" FontSize="16" FontAttributes="Bold" Grid.Row="4" Grid.Column="0" Padding="0" ></Label>
+                        <Label Text="Quarte venant :" FontSize="16" FontAttributes="Bold" Grid.Row="5" Grid.Column="0" Padding="0" ></Label>
+                        <Label Text="Couplet Gagnant :" FontSize="16" FontAttributes="Bold" Grid.Row="6" Grid.Column="0" Padding="0"></Label>
+                        <Label Text="Couplet place A :" FontSize="16" FontAttributes="Bold" Grid.Row="7" Grid.Column="0" Padding="0"></Label>
+                        <Label Text="Couplet place B :" FontSize="16" FontAttributes="Bold" Grid.Row="8" Grid.Column="0" Padding="0"></Label>
+                        <Label Text="Couplet place C :" FontSize="16" FontAttributes="Bold" Grid.Row="9" Grid.Column="0" Padding="0" ></Label>
+                        <Button Text="Le Journal" CornerRadius="45" BackgroundColor="red" Font="20" FontAttributes="Bold" Grid.Row="10" Grid.ColumnSpan="2" Padding="0"></Button>
+
+                        <Label x:Name="Date" Text="" FontSize="16" Grid.Row="0" Grid.Column="1" Padding="0" ></Label>
+                        <Label x:Name="Arrivee" Text="" FontSize="16" Grid.Row="1" Grid.Column="1" Padding="0" ></Label>
+                        <Label x:Name="Ordre" Text="" FontSize="16" Grid.Row="2" Grid.Column="1" Padding="0" ></Label>
+                        <Label x:Name="Desordre" Text="" FontSize="16" Grid.Row="3" Grid.Column="1" Padding="0" ></Label>
+                        <Label x:Name="Bonus" Text="" FontSize="16" Grid.Row="4" Grid.Column="1" Padding="0" ></Label>
+                        <Label x:Name="QVenant" Text="" FontSize="16" Grid.Row="5" Grid.Column="1" Padding="0" ></Label>
+                        <Label x:Name="CGagnant" Text="" FontSize="16" Grid.Row="6" Grid.Column="1" Padding="0" ></Label>
+                        <Label x:Name="CPlaceA" Text="" FontSize="16" Grid.Row="7" Grid.Column="1" Padding="0" ></Label>
+                        <Label x:Name="CPlaceB" Text="" FontSize="16" Grid.Row="8" Grid.Column="1" Padding="0" ></Label>
+                        <Label x:Name="CPlaceC" Text="" FontSize="16" Grid.Row="9" Grid.Column="1" Padding="0" ></Label>
+
+
+                    </Grid>
+                
+            </StackLayout>
+        </ScrollView>
+
+    </StackLayout>
+
+</ContentPage>

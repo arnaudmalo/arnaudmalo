@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pmub.Retraits">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#0ed145" Padding="10">
+
+            <Frame Padding="10" CornerRadius="0">
+                <Label Text="P M U - B" HorizontalTextAlignment="Center" TextColor="red" FontSize="30"/>
+            </Frame>
+            <ScrollView>
+                <StackLayout>
+
+
+                    <Label Text="RETRAITS" FontSize="24" BackgroundColor="Yellow" HorizontalOptions="Center"></Label>
+                    <Label Text="La lotterie nationale du Burkina Faso" FontSize="16" Padding="10"></Label>
+
+                    <Label  Text="Demande de retraits" FontSize="16" FontAttributes="Bold"  HorizontalTextAlignment="Center"></Label>
+                    <Label Text="Mode de retrait" TextColor="White" FontSize="16" FontAttributes="Bold" HorizontalTextAlignment="Center"></Label>
+
+                    <RadioButton x:Name="orange" Content="Orange" Value="Orange"></RadioButton>
+                    <RadioButton x:Name="Moov" Content="Moov" Value="Moov"></RadioButton>
+                    <RadioButton x:Name="Sank" Content="Sank" Value="Sank"></RadioButton>
+
+                    <Entry Placeholder="Numéro de téléphone" Keyboard="Numeric" ></Entry>
+                    <Entry  Placeholder="Montant  " Keyboard="Numeric"></Entry>
+                    <Entry  Placeholder="Mot de Passe "></Entry>
+
+                    <Button Text="Retrait" BackgroundColor="Yellow"></Button>
+                    <Label></Label>
+
+                    <Label Text="100% gratuit" FontSize="10" TextColor="Black" VerticalOptions="end" HorizontalOptions="Center"></Label>
+
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

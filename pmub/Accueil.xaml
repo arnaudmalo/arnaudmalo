@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pmub.Accueil">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#0ed145" Padding="10">
+            <Frame Padding="10" CornerRadius="0">
+                <Label Text="P M U - B" HorizontalTextAlignment="Center" TextColor="red" FontSize="30"/>
+            </Frame>
+            <ScrollView>
+                <StackLayout>
+
+                    <Label Text="ACCUEIL" FontSize="24" BackgroundColor="Yellow" HorizontalOptions="Center">
+
+                    </Label>
+                    <Label Text="La lotterie nationale du Burkina Faso" FontSize="16" Padding="10">
+
+                    </Label>
+
+                    <Button BackgroundColor="White" Text="PARI" FontSize="16" FontAttributes="Bold" Clicked="OpenPariPage_Clicked"></Button>
+                    <Button BackgroundColor="White" Text="DEPOTS" FontSize="16" FontAttributes="Bold" Clicked="OpenDepotPage_Clicked"></Button>
+                    <Button BackgroundColor="White" Text="SOLDE" FontSize="16" FontAttributes="Bold" Clicked="OpenSoldePage_Clicked"></Button>
+                    <Button BackgroundColor="White" Text="RETRAIT" FontSize="16" FontAttributes="Bold" Clicked="OpenRetraitPage_Clicked"></Button>
+                    <Button BackgroundColor="White" Text="Deconnexion" FontSize="16" FontAttributes="Bold" Clicked="Deconnexion_Clicked"></Button>
+                    <Label Text="100% gratuit" FontSize="10" TextColor="Black" VerticalOptions="End" HorizontalOptions="Center">
+
+                    </Label>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

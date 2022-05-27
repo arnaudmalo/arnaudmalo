@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pmub.Inscriptions">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#0ed145" Padding="10">
+            <Frame Padding="10" CornerRadius="0">
+                <Label Text="P M U - B" HorizontalTextAlignment="Center" TextColor="red" FontSize="30"/>
+            </Frame>
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="INSCRIPTIONS" FontSize="24" BackgroundColor="Yellow" HorizontalOptions="Center">
+
+                    </Label>
+                    <Label Text="Inscrivez vous et jouez" HorizontalTextAlignment="Center" Padding="10"></Label>
+                    <Entry x:Name="NomUtilisateur" FontSize="16" Placeholder="Nom :" BackgroundColor="White"></Entry>
+                    <Entry x:Name="PrenomUtilisateur" FontSize="16"  Placeholder="Prenoms :" BackgroundColor="White"></Entry>
+                    <Entry x:Name="TelephoneUtilisateur" Placeholder="Telephone :" Keyboard="Numeric" BackgroundColor="White"></Entry>
+
+                    <Entry x:Name="MotdePasse" Placeholder="Mot de Passe :" BackgroundColor="White"></Entry>
+                    <Entry x:Name="Verification" Placeholder="Mot de Passe :" BackgroundColor="White"></Entry>
+                    <Button x:Name="ValiderInscription" Clicked="ValiderInscription_Clicked" Text="Valider" BackgroundColor="Yellow" FontAttributes="Bold" FontSize="16"></Button>
+
+
+                    <Label Text="100% gratuit" FontSize="10" TextColor="Black" VerticalOptions="EndAndExpand" HorizontalOptions="Center">
+
+                    </Label>
+
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
