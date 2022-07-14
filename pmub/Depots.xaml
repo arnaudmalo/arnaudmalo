@@ -5,7 +5,7 @@
     <ContentPage.Content>
   
         <StackLayout BackgroundColor="#0ed145" Padding="10">
-            <Frame Padding="10" CornerRadius="0">
+            <Frame Padding="10" CornerRadius="0" BackgroundColor="#0ed145" >
                 <Label Text="P M U - B" HorizontalTextAlignment="Center" TextColor="red" FontSize="30"/>
             </Frame>
             <ScrollView>
@@ -38,7 +38,7 @@
                         <Entry x:Name="MontantDepot" Placeholder="Montant du dépôt:" Keyboard="Numeric"></Entry>
 
                     <Button Text=" Valider " BackgroundColor="Yellow"></Button>
-                    <Label Text="100% gratuit" FontSize="10" TextColor="Black" VerticalOptions="end" HorizontalOptions="Center"></Label>
+                    <Label Text="100% gratuit" FontSize="10" TextColor="Black" VerticalOptions="EndAndExpand" HorizontalOptions="Center"></Label>
                 </StackLayout>
             </ScrollView>
         </StackLayout>

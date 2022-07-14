@@ -4,7 +4,7 @@
              x:Class="pmub.Solde">
     <ContentPage.Content>
         <StackLayout BackgroundColor="#0ed145" Padding="10">
-            <Frame Padding="10" CornerRadius="0">
+            <Frame Padding="10" CornerRadius="0" BackgroundColor="#0ed145">
                 <Label Text="P M U - B" HorizontalTextAlignment="Center" TextColor="red" FontSize="30"/>
             </Frame>
             <ScrollView>

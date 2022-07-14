@@ -4,7 +4,7 @@
              x:Class="pmub.Accueil">
     <ContentPage.Content>
         <StackLayout BackgroundColor="#0ed145" Padding="10">
-            <Frame Padding="10" CornerRadius="0">
+            <Frame Padding="10" CornerRadius="0" BackgroundColor="#0ed145">
                 <Label Text="P M U - B" HorizontalTextAlignment="Center" TextColor="red" FontSize="30"/>
             </Frame>
             <ScrollView>
@@ -17,11 +17,11 @@
 
                     </Label>
 
-                    <Button BackgroundColor="White" Text="PARI" FontSize="16" FontAttributes="Bold" Clicked="OpenPariPage_Clicked"></Button>
-                    <Button BackgroundColor="White" Text="DEPOTS" FontSize="16" FontAttributes="Bold" Clicked="OpenDepotPage_Clicked"></Button>
-                    <Button BackgroundColor="White" Text="SOLDE" FontSize="16" FontAttributes="Bold" Clicked="OpenSoldePage_Clicked"></Button>
-                    <Button BackgroundColor="White" Text="RETRAIT" FontSize="16" FontAttributes="Bold" Clicked="OpenRetraitPage_Clicked"></Button>
-                    <Button BackgroundColor="White" Text="Deconnexion" FontSize="16" FontAttributes="Bold" Clicked="Deconnexion_Clicked"></Button>
+                    <Button x:Name="BtnOpenPARI" BackgroundColor="White" Text="PARI" FontSize="16" FontAttributes="Bold" Clicked="OpenPariPage_Clicked"></Button>
+                    <Button x:Name="BtnOpenDEPOTS" BackgroundColor="White" Text="DEPOTS" FontSize="16" FontAttributes="Bold" Clicked="OpenDepotPage_Clicked"></Button>
+                    <Button x:Name="BtnOpenSOLDE" BackgroundColor="White" Text="SOLDE" FontSize="16" FontAttributes="Bold" Clicked="OpenSoldePage_Clicked"></Button>
+                    <Button x:Name="BtnOpenRETRAIT" BackgroundColor="White" Text="RETRAIT" FontSize="16" FontAttributes="Bold" Clicked="OpenRetraitPage_Clicked"></Button>
+                    <Button x:Name="BtnDeconnection" BackgroundColor="White" Text="Deconnexion" FontSize="16" FontAttributes="Bold" Clicked="Deconnexion_Clicked"></Button>
                     <Label Text="100% gratuit" FontSize="10" TextColor="Black" VerticalOptions="End" HorizontalOptions="Center">
 
                     </Label>

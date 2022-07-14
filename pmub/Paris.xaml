@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="#0ed145" Padding="10">
 
-            <Frame Padding="10" CornerRadius="0">
+            <Frame Padding="10" CornerRadius="0" BackgroundColor="#0ed145">
                 <Label Text="P M U - B" HorizontalTextAlignment="Center" TextColor="red" FontSize="30"/>
             </Frame>
             <ScrollView>
@@ -34,7 +34,24 @@
 
                     </Grid>
 
-                    <Entry x:Name="Pari" IsEnabled="False" FontSize="20" FontAttributes="Bold" BackgroundColor="White"></Entry>
+                    <Label x:Name="Parier" TextColor="Black" FontSize="20" FontAttributes="Bold" BackgroundColor="White"></Label>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Button x:Name="BtnX" Clicked="BtnX_Clicked"  Text="X" FontSize="20" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="0" Grid.Column="0"></Button>
+                        <Button x:Name="Btn" Clicked="Btn__Clicked"  Text="/" FontSize="20" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="0" Grid.Column="1"></Button>
+                        <Button x:Name="BtnEffacer" Clicked="BtnEffacer_Clicked"  Text="Effacer" FontSize="20" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="0" Grid.Column="2"></Button>
+
+                    </Grid>
+                    
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition></RowDefinition>
@@ -49,26 +66,26 @@
                             <ColumnDefinition></ColumnDefinition>
                             <ColumnDefinition></ColumnDefinition>
                         </Grid.ColumnDefinitions>
-                        <Button x:Name="Btn1" Text="1" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="0" Grid.Column="0"></Button>
-                        <Button x:Name="Btn2" Text="2" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="0" Grid.Column="1"></Button>
-                        <Button x:Name="Btn3" Text="3" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="0" Grid.Column="2"></Button>
-                        <Button x:Name="Btn4" Text="4" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="0" Grid.Column="3"></Button>
-                        <Button x:Name="Btn5" Text="5" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="0" Grid.Column="4"></Button>
-                        <Button x:Name="Btn6" Text="6" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="1" Grid.Column="0"></Button>
-                        <Button x:Name="Btn7" Text="7" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="1" Grid.Column="1"></Button>
-                        <Button x:Name="Btn8" Text="8" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="1" Grid.Column="2"></Button>
-                        <Button x:Name="Btn9" Text="9" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="1" Grid.Column="3"></Button>
-                        <Button x:Name="Btn10" Text="10" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="1" Grid.Column="4"></Button>
-                        <Button x:Name="Btn11" Text="11" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="2" Grid.Column="0"></Button>
-                        <Button x:Name="Btn12" Text="12" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="2" Grid.Column="1"></Button>
-                        <Button x:Name="Btn13" Text="13" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="2" Grid.Column="2"></Button>
-                        <Button x:Name="Btn14" Text="14" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="2" Grid.Column="3"></Button>
-                        <Button x:Name="Btn15" Text="15" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="2" Grid.Column="4"></Button>
-                        <Button x:Name="Btn16" Text="16" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="3" Grid.Column="0"></Button>
-                        <Button x:Name="Btn17" Text="17" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="3" Grid.Column="1"></Button>
-                        <Button x:Name="Btn18" Text="18" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="3" Grid.Column="2"></Button>
-                        <Button x:Name="Btn19" Text="19" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="3" Grid.Column="3"></Button>
-                        <Button x:Name="Btn20" Text="20" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="3" Grid.Column="4"></Button>
+                        <Button x:Name="Btn1" Clicked="Btn1_Clicked" Text="1" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="0" Grid.Column="0"></Button>
+                        <Button x:Name="Btn2" Clicked="Btn2_Clicked" Text="2" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="0" Grid.Column="1"></Button>
+                        <Button x:Name="Btn3" Clicked="Btn3_Clicked"  Text="3" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="0" Grid.Column="2"></Button>
+                        <Button x:Name="Btn4" Clicked="Btn4_Clicked" Text="4" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="0" Grid.Column="3"></Button>
+                        <Button x:Name="Btn5" Clicked="Btn5_Clicked" Text="5" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="0" Grid.Column="4"></Button>
+                        <Button x:Name="Btn6" Clicked="Btn6_Clicked" Text="6" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="1" Grid.Column="0"></Button>
+                        <Button x:Name="Btn7" Clicked="Btn7_Clicked" Text="7" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="1" Grid.Column="1"></Button>
+                        <Button x:Name="Btn8" Clicked="Btn8_Clicked" Text="8" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="1" Grid.Column="2"></Button>
+                        <Button x:Name="Btn9" Clicked="Btn9_Clicked" Text="9" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="1" Grid.Column="3"></Button>
+                        <Button x:Name="Btn10" Clicked="Btn10_Clicked" Text="10" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="1" Grid.Column="4"></Button>
+                        <Button x:Name="Btn11" Clicked="Btn11_Clicked" Text="11" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="2" Grid.Column="0"></Button>
+                        <Button x:Name="Btn12" Clicked="Btn12_Clicked" Text="12" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="2" Grid.Column="1"></Button>
+                        <Button x:Name="Btn13" Clicked="Btn13_Clicked" Text="13" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="2" Grid.Column="2"></Button>
+                        <Button x:Name="Btn14" Clicked="Btn14_Clicked" Text="14" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="2" Grid.Column="3"></Button>
+                        <Button x:Name="Btn15" Clicked="Btn15_Clicked" Text="15" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="2" Grid.Column="4"></Button>
+                        <Button x:Name="Btn16" Clicked="Btn16_Clicked" Text="16" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="3" Grid.Column="0"></Button>
+                        <Button x:Name="Btn17" Clicked="Btn17_Clicked" Text="17" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="3" Grid.Column="1"></Button>
+                        <Button x:Name="Btn18" Clicked="Btn18_Clicked" Text="18" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="3" Grid.Column="2"></Button>
+                        <Button x:Name="Btn19" Clicked="Btn19_Clicked" Text="19" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="3" Grid.Column="3"></Button>
+                        <Button x:Name="Btn20" Clicked="Btn20_Clicked" Text="20" FontSize="16" FontAttributes="Bold" BackgroundColor="Yellow" Grid.Row="3" Grid.Column="4"></Button>
 
                     </Grid>
                     <Button x:Name="ValiderPari" Text="Valider" BackgroundColor="Green" FontSize="16" FontAttributes="Bold"></Button>

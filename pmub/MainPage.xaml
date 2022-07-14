@@ -4,7 +4,7 @@
              x:Class="pmub.MainPage">
 
     <StackLayout BackgroundColor="#0ed145" Padding="10">
-        <Frame Padding="10" CornerRadius="0">
+        <Frame Padding="10" CornerRadius="0" BackgroundColor="#0ed145">
             <Label Text="P M U - B" HorizontalTextAlignment="Center" TextColor="red" FontSize="30"/>
         </Frame>
         <ScrollView>
@@ -14,14 +14,14 @@
                 </Label>
                 <Label Text="Inscrivez vous et jouez" HorizontalTextAlignment="Center" Padding="10"></Label>
 
-                <Entry Placeholder="Utilisateur" FontSize="16"></Entry>
-                <Entry Placeholder="Mots de Passe" FontSize="16"></Entry>
+                <Entry x:Name="Entry_Utilisateur" Placeholder="Utilisateur" FontSize="16"></Entry>
+                <Entry x:Name="Entry_PassWord" Placeholder="Mots de Passe" FontSize="16"></Entry>
 
 
-                <Button Text="Connexion"  FontSize="16" BackgroundColor="Yellow" Padding="0" Margin="60,0,60,0"  
-                CornerRadius="15" FontAttributes="Bold"></Button>
+                <Button x:Name="Btn_Connexion" Text="Connexion"  FontSize="16" BackgroundColor="Yellow" Padding="0" Margin="60,0,60,0"  
+                CornerRadius="15" FontAttributes="Bold" Clicked="BtnConnexion_Clicked" ></Button>
                 <Label Text="Si vous n'avez pas encore de compte" HorizontalTextAlignment="Center" Padding="0"></Label>
-                <Button Text="Inscriptions" FontSize="16" FontAttributes="Bold" BackgroundColor="Green" Padding="0" Margin="60,0,60,0"
+                <Button x:Name="Btn_Inscription" Text="Inscriptions" FontSize="16" FontAttributes="Bold" BackgroundColor="Green" Padding="0" Margin="60,0,60,0"
                Clicked="OpenInscriptionPage" ></Button>
                 
 
